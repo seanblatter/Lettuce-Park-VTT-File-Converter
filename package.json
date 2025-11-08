@@ -1,0 +1,22 @@
+{
+  "name": "lettuce-park-vtt-file-converter",
+  "version": "1.0.0",
+  "description": "Takes audio from video and creates it into a VTT file",
+  "main": "bin/convert-to-vtt.js",
+  "bin": {
+    "convert-to-vtt": "./bin/convert-to-vtt.js"
+  },
+  "scripts": {
+    "lint": "node --check bin/convert-to-vtt.js src/video-to-vtt.js bin/start-server.js public/app.js",
+    "start": "node ./bin/start-server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1",
+    "openai": "^4.0.0"
+  }
+}
